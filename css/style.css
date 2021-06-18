@@ -12,7 +12,7 @@
     --font-action: "Muli", serif;
 }
 
-.menu-icon {
+.menulines {
     height: 2rem;
     width: 2rem;
     position: fixed;
@@ -23,12 +23,56 @@
     flex-direction: column;
     justify-content:space-evenly;
     cursor: pointer;
+    transition: .8s;
 }
+
+.show-menu .menulines {
+    right: 16rem;
+}
+
 .line {
     width: 100%;
     background-color: #fff;
     height: .1rem;
     box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: 1s;
+}
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line1 {
+    transform: rotate(48deg) translate(.3rem, .345rem);
+}
+.show-menu #line3 {
+    transform: rotate(-48deg) translate(.3rem, -.345rem);
+}
+
+.menulines span {
+    position: absolute;
+    left: 3rem;
+    background-color: #61165d;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+.menulines span::before {
+    content: "";
+    position: absolute;
+    border-right:  .5rem solid #61165d;
+    border-top:    .5rem solid transparent;
+    border-left:   .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+.show-menu .menulines:hover span {
+    opacity: 1;
+    transition: .7s;
 }
 
 header {
@@ -126,6 +170,11 @@ header {
     background-color: #fff;
     position: fixed;
     top: 0;
+    right: -20rem;
+    transition: all 0.7s;
+}
+
+.show-menu .sidebar {
     right: 0;
 }
 
