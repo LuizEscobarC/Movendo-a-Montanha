@@ -286,7 +286,7 @@ header {
 .texto-historia {
     font-family: var(--font-secundary);
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 3;
 }
 .texto-historia h3 {
     font-family: var(--font-primary);
@@ -295,7 +295,7 @@ header {
     .texto-historia {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 6;
+        grid-row-start: 5;
         grid-row-end: 8;
     }
   
@@ -304,12 +304,12 @@ header {
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        grid-row: 2;
+
     }
 
     .titulo-historia {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
         display: grid;
