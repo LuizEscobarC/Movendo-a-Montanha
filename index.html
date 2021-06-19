@@ -8,7 +8,7 @@
   <link rel="icon" sizes="32x32" href="imagens/favicon-32x32.png">
   <link rel="icon" sizes="16x16" href="imagens/favicon-16x16.png">
   <link rel="manifest" sizes="16x16" href="/site.webmanifest">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,19 +54,19 @@
     </aside>
 
     <section class="container-historia">
-      <div class="titulo-historia">
+      <div class="titulo-historia" data-aos="fade-up">
         <h1>
           Minha história
         </h1>
       </div>
-      <div class="texto-historia">
+      <div class="texto-historia" data-aos="fade-up">
         <h3>
           Marcell Colman
         </h3>
-        <p>O físico alemão Albert Einstein é um grande exemplo de superação. Aos 3 anos de idade apresentava dificuldades em se comunicar. Na primeira tentativa em ingressar na universidade, acabou reprovado. Mesmo sendo aluno acima da média, era considerado mais lento que os colegas de sala na resolução de problemas matemáticos. Dizem até que reprovou na matéria que mais tarde iria consagrá-lo com um prêmio Nobel. Como no livro Pai Rico Pai Pobre, Einstein sofreu influência positiva de um jovem estudante de medicina, o que suscitou no garoto de 10 anos o gosto pela leitura de obras mais elaboradas. Sua mente brilhante não estava somente voltada a cálculos matemáticos, o que pode ser demonstrado em sua opinião a respeito dos momentos de crise:
+        <p data-aos="fade-left">O físico alemão Albert Einstein é um grande exemplo de superação. Aos 3 anos de idade apresentava dificuldades em se comunicar. Na primeira tentativa em ingressar na universidade, acabou reprovado. Mesmo sendo aluno acima da média, era considerado mais lento que os colegas de sala na resolução de problemas matemáticos. Dizem até que reprovou na matéria que mais tarde iria consagrá-lo com um prêmio Nobel. Como no livro Pai Rico Pai Pobre, Einstein sofreu influência positiva de um jovem estudante de medicina, o que suscitou no garoto de 10 anos o gosto pela leitura de obras mais elaboradas. Sua mente brilhante não estava somente voltada a cálculos matemáticos, o que pode ser demonstrado em sua opinião a respeito dos momentos de crise:
           “Não pretendemos que as coisas mudem, se sempre fazemos o mesmo. A crise é a melhor benção que pode ocorrer com pessoas e países, porque a crise traz progressos. A criatividade nasce da angústia, como o dia nasce da noite escura. É na crise que nascem as invenções, os descobrimentos e as grandes estratégias. Quem supera a crise, supera a si mesmo, sem ficar superado.”
         </p>
-        <p>
+        <p data-aos="fade-right">
           A história dele é bem comum. Um garoto que sempre estudou em escolas públicas, quando entrou na adolescência, aos 10 anos, desenvolveu uma timidez imensa e por isso se envolvia em diversas confusões, por muitas vezes seus pais foram chamados na escola, principalmente quando Einstein estava cursando a 5ª serie. Nunca foi um aluno exemplar, sempre sofreu bullying, e ia muito mal na escola com notas ruins.  Quando Albert entrou no 8º ano, ele surpreendeu a todos, pois conseguiu notas muito melhores como nota E em Física, E em Química, E em Matemática e D em Línguas Latinas. Este caso se repetiu por 3 anos consecutivos. Quando mais velho Einstein ingressou em um curso técnico, porém nunca terminou.
           Então um dia Albert Einstein resolveu brincar de física, começou a analisar os livros de física que nunca tinha dado importância, alguns livros sobre a sua biografia dizem que o cientista lia rapidamente os livros e dali já tirava suas maiores conclusões.
           Hoje em dia reconhecido como o maior e melhor Físico Matemático de todos os tempos, Einstein conseguiu conquistar todo o reconhecimento através da sua força de vontade, sendo assim considerado um gênio e um fenômeno, já que nunca tinha sido bom nos estudos.</p>
@@ -74,13 +74,16 @@
          
       </div>
       <div class="img-wrapper-historia .img">
-        <img src="imagens/marcell-gordinho.png" height="300px">
-        <img src="imagens/marcell.jpg" height="300px">
+        <img src="imagens/marcell-gordinho.png" height="300px" data-aos="fade-left">
+        <img src="imagens/marcell.jpg" height="300px" data-aos="fade-right">
       </div>
     </section>
 
   </div>
 </body>
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
