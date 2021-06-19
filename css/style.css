@@ -224,3 +224,65 @@ header {
     background-color: #c055bba6;
     color: #ff00f2;
 }
+
+.container-historia {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 65vh 65vh ;
+    grid-column-gap: 2rem;
+    border-radius: 15rem;
+    border: 2px solid #61165d;
+}
+.titulo-historia {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.titulo-historia h1 {
+    border-bottom: solid 5px #61165d;
+    border-radius: .5rem;
+    font-family: var(--font-primary);
+}
+.texto-historia {
+    display: grid;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.texto-historia {
+    display: grid;
+    justify-content: center; 
+}
+
+.img-wrapper-historia {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.img-wrapper-historia img {
+    display: grid;
+    border-radius: 1rem;
+    opacity: .9;
+}
+.img-wrapper-historia img:hover {
+    display: grid;
+    border-radius: 5rem;
+    opacity: 1;
+}
+
+.texto-historia {
+    font-family: var(--font-secundary);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.texto-historia h3 {
+    font-family: var(--font-primary);
+}
