@@ -16,7 +16,7 @@
     height: 2rem;
     width: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 20;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -230,7 +230,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh ;
-    grid-column-gap: 2rem;
 }
 .titulo-historia {
     grid-column-start: 1;
@@ -265,7 +264,6 @@ header {
 
 .img-wrapper-historia {
     display: grid;
-    position:relative;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 2;
@@ -293,28 +291,35 @@ header {
 .texto-historia h3 {
     font-family: var(--font-primary);
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) { 
     .texto-historia {
         display: grid;
+        text-align:left;
+        font-size: 18px;
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 6;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 8;
     }
     .img-wrapper-historia {
         display: grid;
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row: 2;
-        grid-row-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
         grid-row-end: 3;
+        grid-row: 2;
+        justify-content: center;
+        row-gap: 1rem;
+        margin-top: 0rem;
     }
-    .container-historia {
-        height: 300vh;
+    .titulo-historia {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 30vh 110vh 50vh 50vh 60vh ;
-        grid-column-gap: 2rem;
+        justify-content: center;
+        align-content: center;
     }
 }
 
