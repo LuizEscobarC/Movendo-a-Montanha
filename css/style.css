@@ -404,3 +404,68 @@ header {
     }
 }
 
+.desafios {
+    position: relative;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 20vh);
+    overflow: hidden;
+}
+.desafios video {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 17;
+    grid-row: 1/6;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.content-desafios {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    justify-items: center;
+    flex-direction: column;
+    text-shadow: 1rem 1rem 2rem black;
+    width: 40%;
+}
+.content-desafios h1 {
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 450;
+    text-align: left;
+}
+.content-desafios p {
+    color: #e9e8e8;
+    font-family: var(--font-secundary);
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 100%;
+    text-align: justify;
+}
+.content-desafios h1, p {
+    opacity: 0.8;
+}
+.content-desafios:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.478);
+    border-radius: 1rem;
+}
+@media (max-width:630px) {
+    .content-desafios h1 {
+        font-size: 1.6rem;
+    }
+    .content-desafios p {
+        font-size: 0.7rem;
+    }
+    .content-desafios {
+        top: 1rem;
+        left: 1.5rem;
+        width: 80%;
+    }
+}
+
