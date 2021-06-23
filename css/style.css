@@ -447,15 +447,14 @@ header {
     width: 100%;
     text-align: justify;
 }
-.content-desafios h1, p {
-    opacity: 0.8;
-}
+
 .content-desafios:hover {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.478);
     border-radius: 1rem;
 }
 @media (max-width:630px) {
+
     .content-desafios h1 {
         font-size: 1.6rem;
     }
