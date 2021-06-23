@@ -317,7 +317,7 @@ header {
     color: #fff;
     opacity: 0;
     visibility: hidden;
-    bottom: -2rem;
+    bottom: -1rem;
     transition:  all .3s;
     
 }
@@ -337,6 +337,27 @@ header {
     font-family: var(--font-secundary);
     color: #fff;
     font-size: 1rem;
+}
+
+.btn-info {
+    color: #fff;
+    background: #f0c27b; 
+    background: -webkit-linear-gradient(to right, #f0c27b, #4b1248); 
+    background: linear-gradient(to right, #f0c27b, #4b1248);
+    font-family: var(--font-action);
+    font-size: .7rem;
+    padding: .5rem 2rem;
+    border: none;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+.btn-info:hover {
+    box-shadow: .1rem .1rem 1rem rgba(255, 255, 255, 0.8);
+    color: #000;
 }
 
 .card:hover .card-info {
